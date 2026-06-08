@@ -1,10 +1,7 @@
 # Outreach Pipeline CLI
 
 <p align="center">
-  <img
-    src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='240' viewBox='0 0 1200 240'><rect width='1200' height='240' rx='24' fill='%230b1320'/><rect x='24' y='24' width='1152' height='192' rx='18' fill='%23141f34' stroke='%232b3f66' stroke-width='2'/><text x='60' y='95' font-family='Segoe UI, Arial, sans-serif' font-size='40' font-weight='700' fill='%23f5f7fb'>Outreach Pipeline CLI</text><text x='60' y='138' font-family='Segoe UI, Arial, sans-serif' font-size='20' fill='%23bfd1ee'>Node.js automation for company discovery, contact enrichment, and controlled outbound outreach</text><rect x='60' y='162' width='178' height='34' rx='17' fill='%231f5eff'/><text x='88' y='184' font-family='Segoe UI, Arial, sans-serif' font-size='16' font-weight='600' fill='white'>ES Modules</text><rect x='255' y='162' width='168' height='34' rx='17' fill='%231f7a4d'/><text x='286' y='184' font-family='Segoe UI, Arial, sans-serif' font-size='16' font-weight='600' fill='white'>API Driven</text><rect x='440' y='162' width='228' height='34' rx='17' fill='%23714d00'/><text x='470' y='184' font-family='Segoe UI, Arial, sans-serif' font-size='16' font-weight='600' fill='white'>Operator Approval Gate</text></svg>"
-    alt="Outreach Pipeline CLI banner"
-  />
+  <img src="./assets/readme-banner.svg" alt="Outreach Pipeline CLI banner" />
 </p>
 
 A production-style command-line pipeline for discovering lookalike companies, identifying decision-makers, enriching verified contact data, and dispatching personalized outreach emails through a human-approved delivery step.

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="title desc">
+  <title id="title">Outreach Pipeline CLI</title>
+  <desc id="desc">Node.js automation for company discovery, contact enrichment, and controlled outbound outreach.</desc>
+  <rect width="1200" height="240" rx="24" fill="#0b1320" />
+  <rect x="24" y="24" width="1152" height="192" rx="18" fill="#141f34" stroke="#2b3f66" stroke-width="2" />
+  <text x="60" y="95" font-family="Segoe UI, Arial, sans-serif" font-size="40" font-weight="700" fill="#f5f7fb">Outreach Pipeline CLI</text>
+  <text x="60" y="138" font-family="Segoe UI, Arial, sans-serif" font-size="20" fill="#bfd1ee">Node.js automation for company discovery, contact enrichment, and controlled outbound outreach</text>
+  <rect x="60" y="162" width="178" height="34" rx="17" fill="#1f5eff" />
+  <text x="88" y="184" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">ES Modules</text>
+  <rect x="255" y="162" width="168" height="34" rx="17" fill="#1f7a4d" />
+  <text x="286" y="184" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">API Driven</text>
+  <rect x="440" y="162" width="228" height="34" rx="17" fill="#714d00" />
+  <text x="470" y="184" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="600" fill="#ffffff">Operator Approval Gate</text>
+</svg>
