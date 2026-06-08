@@ -2,9 +2,9 @@
   <img src="./assets/readme-banner.svg" alt="Outreach Pipeline CLI banner" />
 </p>
 
-A production-style command-line pipeline for discovering lookalike companies, identifying decision-makers, enriching verified contact data, and dispatching personalized outreach emails through a human-approved delivery step.
+A production-grade command-line pipeline for discovering lookalike companies, identifying key decision-makers, enriching verified contact data, and dispatching personalized outreach emails through a secure, human-approved delivery step.
 
-The project is intentionally structured as a layered Node.js backend script rather than a monolithic automation file. It emphasizes operational clarity, integration boundaries, defensive validation, credit-conscious API usage, and interview-ready separation of concerns.
+The project is intentionally structured as a layered Node.js backend application rather than a monolithic automation script. It emphasizes operational clarity, robust integration boundaries, defensive validation, credit-conscious API usage, and strict separation of concerns to support highly scalable automated workflows.
 
 ## Overview
 
@@ -112,9 +112,9 @@ This stage is intentionally conservative to preserve limited API credits.
 
 ### 4. Human Approval Gate
 
-Before any email is sent, the final lead list is displayed in a terminal table. The operator must explicitly confirm the send operation. If approval is not granted, the pipeline exits without delivering any messages.
+Before any network request is sent to the SMTP/Messaging gateway, the final lead list is rendered in the terminal as a structural table. The operator must explicitly type confirmation to authorize the send operation. If approval is denied, the script exits cleanly without dispatching any payloads.
 
-This design keeps the system safer for demos, evaluations, and real-world testing scenarios.
+This design prevents accidental mass-deliveries and keeps the system safe for live production environments.
 
 ### 5. Email Delivery
 
@@ -276,15 +276,14 @@ Prospeo may not have relevant seniority matches for a discovered company, or the
 
 ## Development Notes
 
-The codebase is organized so each layer owns a specific concern:
+The codebase is strictly modularized to ensure every layer owns a highly specific operational concern:
+* `clients/` exclusively handles raw HTTP network contracts.
+* `services/` orchestrates and manages the business logic workflows.
+* `config/` strictly validates startup environment parameters.
+* `utils/` houses reusable, cross-cutting helpers (e.g., loggers, mathematical backoffs).
+* `index.js` remains a lightweight execution entrypoint.
 
-- `clients/` handles raw HTTP contracts
-- `services/` orchestrate business workflow
-- `config/` validates runtime configuration
-- `utils/` provide reusable cross-cutting behavior
-- `index.js` remains a thin entrypoint
-
-This separation makes the project easier to reason about during interviews and easier to extend later with features such as concurrency pools, typed custom error classes, persistence, analytics, or alternate provider adapters.
+This structural separation makes the project highly maintainable and easily extensible for integrating features like asynchronous concurrency pools, persistent data storage, or new provider adapters.
 
 ## Suggested Next Improvements
 
@@ -294,16 +293,6 @@ This separation makes the project easier to reason about during interviews and e
 - Add structured custom error classes for provider, validation, and credit-exhaustion failures.
 - Introduce persistent run artifacts for audit history and replay safety.
 - Add a dry-run mode for non-sending demonstrations.
-
-## Interview Positioning
-
-If you are presenting this repository in an interview, the strongest framing is:
-
-- it demonstrates layered backend architecture in a CLI form
-- it integrates multiple third-party systems behind clean client boundaries
-- it shows defensive programming around paid APIs
-- it balances automation with operator control at the final delivery step
-- it prioritizes observability, validation, and cost-awareness over flashy complexity
 
 ## License
 
