@@ -1,5 +1,3 @@
-# Outreach Pipeline CLI
-
 <p align="center">
   <img src="./assets/readme-banner.svg" alt="Outreach Pipeline CLI banner" />
 </p>
